@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title> Loops challenge</title>
+</head>
+
+<body>
+    <main>
+        <!-- seccion central -->
+        <section class="container__central">
+            <!-- encabezado -->
+            <div class="platzi">
+                <span class="platzi__icon"><img src="assets/logo.png" alt="" srcset=""></span>
+                <article>
+                    <p>
+                        <strong>Tema</strong> :​​Retos de Bucles y
+                        condicionantes <br>
+
+                        <br> El objetivo de estos retos es practicar y entender a la perfección el uso de los
+                        condicionantes y bucles. <br> Dichos ejercicios están divididos por: If,Switch, For y While <br>
+
+                    </p>
+                </article>
+            </div>
+            <!-- subtitle -->
+            <div class="subtitle">
+                <h3>
+                    Hacer los siguientes ejercicios con IF y Switch
+                </h3>
+            </div>
+            <!-- ejercicio 1 -->
+            <div class="platzi">
+                <article>
+                    <h3> Ejercicio 1</h3>
+
+                    <p>
+                        <br> Escribe un programa que pregunte al usuario si es mayor de edad o no.
+                        <br>
+                        Asumiremos que:
+                        <br>
+                        <br>● En caso afirmativo el usuario responderá ​si
+                        <br>
+                        ●En caso contrario responderá ​no​.
+                        <br>
+                        <br> Si el usuario responde si,se imprimirá por pantalla lo siguiente:
+                        <br>
+                        «Entonces puedes ir a la disco!l». <br>
+
+                        <br>Si el usuario responde no,se imprimirá por pantalla
+                        <br> «Lo siento,lo puedes ir a la disco» <br>
+                        <br>Si el usuario elige una opción diferente,se deberá imprimir por pantalla<br>
+                        «Lo siento, la opción indicada no es válida».
+                    </p>
+
+                    <div class="exersiceOne">
+
+                        <label for="answer_1">
+                            Digita si eres o no mayor de edad:
+                        </label>
+                        <input type="text" class="question" id="text1" placeholder="Solo responde si o no">
+                        <input type="button" class="answer" onclick="MayorOfAge()" value="Responder">
+
+                        <p style="text-align: center; margin: 20px;" id="txt"></p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ejercicio 2 -->
+            <div class="platzi">
+                <article>
+                    <h3> Ejercicio 2</h3>
+
+                    <p>
+                        <br>Escribe un programa que responda a un usuario que quiere comprar un helado <br> en una
+                        conocida marca de comida rápida cuánto le costará en función del topping que elija.<br>
+
+                        <br>
+                        ●El helado sin topping cuesta 1.90€. <br>
+                        <br>
+                        ●El topping de oreo cuesta 1€.<br>
+                        <br>
+                        ●El topping de KitKat cuesta 1.50€.<br>
+                        <br>
+                        ●El topping de brownie cuesta 0.75€.<br>
+                        <br>
+                        ●El topping de lacasitos cuesta 0.95€.<br>
+                        <br>
+                        ●En caso de no disponer del topping solicitado por el usuario el programa escribirá por pantalla
+                        <br>
+                        « no tenemos este topping,lo sentimos» y acontinuación informar del precio del helado sin ningún
+                        topping.<br>
+
+                        <br>Finalmente,el programa escribe por pantalla el precio del helado con el topping seleccionado
+                        (o ninguno).
+
+
+                    </p>
+
+                    <div class="exersiceTwo">
+
+                        <p>
+                            Elije el topping de helado que prefieras:
+                        <ul>
+                            <li>Oreo</li>
+                            <li>KitKat</li>
+                            <li>brownie</li>
+                            <li>lacasitos</li>
+                            <li>basico</li>
+                        </ul>
+                        </p>
+
+                        <label for="answer_1">
+                            Digita el topping que prefieras:
+                        </label>
+                        <input type="text" class="question" id="text2" placeholder="Elije el topping">
+                        <input type="button" class="answer" onclick="BuyIcecream()" value="Comprar">
+
+                        <p style="text-align: center; margin: 20px;" id="txt2"></p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- subtitle -->
+            <div class="subtitle">
+                <h3>
+                    Hacer solo con IF
+                </h3>
+            </div>
+            <!-- ejercicio 3-->
+            <div class="platzi">
+                <article>
+                    <h3> Ejercicio 3</h3>
+
+                    <p>Se quiere crear un programa que resuelva la ecuación cuadrática tipo ax2 + bx + c. <br>
+                        Para ello se ha estudiado el problema, que se ha planteado en pseudocódigo.
+                        <br>
+                        <br>Transformar el pseudocódigo que se muestra acontinuación en código JS y comprobar <br> que
+                        el
+                        programa obtiene los resultados esperados para una serie de casos de prueba.
+                    </p>
+
+                    <div class="exersiceThree">
+                        <img src="assets/Captura de pantalla (12).png" alt="">
+                        <form action="" class="form__exer-3">
+                            <label for="answer_1">
+                                resolucion de la ecuacion ax2 + bx + c
+                            </label>
+                            <span>
+                                <label for=""> Digita a: </label>
+                                <input type="text" class="question" id="text3_a" placeholder="Digita a como un numero ">
+                            </span>
+                            <span>
+                                <label for=""> Digita b: </label>
+                                <input type="text" class="question" id="text3_b" placeholder="Digita b como un numero ">
+                            </span>
+                            <span>
+                                <label for=""> Digita c: </label>
+                                <input type="text" class="question" id="text3_c" placeholder="Digita c como un numero ">
+                            </span>
+                            
+                            
+
+                            <input type="button" class="answer" onclick="ecuation()" value="Comprar">
+
+                            <p style="text-align: center; margin: 20px;" id="txt3"></p>
+                        </form>
+
+                    </div>
+                </article>
+            </div>
+
+
+        </section>
+    </main>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

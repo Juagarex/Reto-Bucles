@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    
+}
+
+hmtl{
+    font-size: 62.5%;
+}
+.container__central{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  
+    
+}
+
+.platzi__icon{
+margin: 0px;
+padding: 40px;
+justify-content: center;
+}
+
+.platzi{
+margin: 25px;
+border: 3px solid #95ca3e;
+padding:25px;
+display: flex;
+flex-direction: column;
+width: 80%;        
+align-items: center;
+text-align: justify;
+font-size: 1.6rem;
+box-shadow: 2px 3px #c7ee89;
+border-radius: 6px;
+}
+
+.subtitle{
+    display: flex;
+    width: 80%;
+    font-size: 1.4rem;
+   
+}
+
+.exersiceOne{
+    margin: 25px;
+    justify-content: center;
+}
+.question {
+padding-left: 10px;
+font-size:1rem ;
+width: 260px;
+height: 45px;
+}
+
+.answer{
+    padding: 10px;
+    width: max-content;
+    height: 45px;
+}
+
+/* ejercicio 2 */
+
+.exersiceTwo{
+    margin: 25px;
+    justify-content: center;
+}
+
+.exersiceTwo ul li{
+    margin: 10px;
+}
+
+
+.exersiceThree{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    
+}
+
+.exersiceThree img{
+    object-fit: contain;
+}
+
+.form__exer-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.form__exer-3 span{
+    margin: 12px;
+    
+}
+
+
+
+
+
+
