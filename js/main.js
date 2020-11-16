@@ -50,9 +50,108 @@ function ecuation() {
         document.getElementById("txt3").innerHTML = ("x1=" + (-b / e + "+" + Math.sqrt(-d) / e + "i" + "x2=" + (-b / e + "+" + Math.sqrt(-d) / e)));
 
     }
+}
 
-
-
+function Par() {
+    var valor = document.getElementById("text4").value;
+    var res = valor % 2;
+    if (res === 0) {
+        document.getElementById("txt4").innerHTML = ("Es par");
+    } else {
+        document.getElementById("txt4").innerHTML = ("El numero es impar ");
+    }
 
 
 }
+
+function tabla() {
+    n = 1;
+    for (i = 0; i <= 10; i++) {
+        c = n * i;
+        console.log(n + " * " + i + " = " + c);
+
+    }
+}
+
+function tablaN() {
+    var n = document.getElementById("txt6").value;
+    i = 0;
+    while (i < 11) {
+        c = n * i;
+        console.log(n + " * " + i + " = " + c);
+        i++;
+    }
+
+
+}
+
+
+function parOrImpar() {
+    var num1 = parseInt(document.getElementById("text7_a").value);
+    var num2 = parseInt(document.getElementById("text7_b").value);
+
+    var par = [];
+    var impar = [];
+
+    if (Number.isInteger(num1) && Number.isInteger(num2)) {
+        while (num1 <= num2) {
+
+            if (num1 % 2 == 0) {
+                par.push(num1);
+                num1++;
+
+            } else {
+                impar.push(num1);
+                num1++;
+
+            }
+
+        }
+        console.log("numeros pares")
+        for (let i = 0; i < par.length; i++) {
+            console.log(par[i]);
+        }
+
+        console.log("numeros impares")
+        for (let i = 0; i < impar.length; i++) {
+            console.log(impar[i]);
+        }
+    }
+}
+
+function divider() {
+    var num = parseInt(document.getElementById("text8_a").value);
+    var divider = [];
+    if (num > 0) {
+        for (i = 0; i <= num; i++) {
+            if (num % i == 0) {
+                divider.push(i);
+            }
+        }
+    }
+    console.log("divisores");
+    for (let i = 0; i < divider.length; i++) {
+        console.log(divider[i]);
+
+    }
+}
+
+
+function sumer() {
+    var num1 = parseInt(document.getElementById("text9_a").value);
+    var num2 = parseInt(document.getElementById("text9_b").value);
+
+    var total = 0;
+
+    while (num1 <= num2) {
+        total += num1
+        num1++
+    }
+
+    console.log(total);
+
+}
+
+
+
+
